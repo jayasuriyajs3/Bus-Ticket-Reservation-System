@@ -29,11 +29,11 @@ Console-based for demo (extendable with DBMS & GUI).
 
 Tech Stack :
 
-Frontend: JavaFX / Mobile UI
+Frontend: JavaFX 
 
 Backend: Java (OOP, Booking & Waitlist Logic)
 
-Database: MySQL / SQLite with JDBC
+Database: MySQL / SQLite 
 
 Version Control: Git & GitHub
 
