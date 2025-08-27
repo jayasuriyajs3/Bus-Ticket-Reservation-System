@@ -27,6 +27,16 @@ Waitlist system (unique) → auto-confirmation when a seat becomes available.
 
 Console-based for demo (extendable with DBMS & GUI).
 
+Tech Stack :
+
+Frontend: JavaFX / Mobile UI
+
+Backend: Java (OOP, Booking & Waitlist Logic)
+
+Database: MySQL / SQLite with JDBC
+
+Version Control: Git & GitHub
+
 UML Diagram:
 
 ![WhatsApp Image 2025-08-27 at 12 47 30_c17f326e](https://github.com/user-attachments/assets/a451e9ee-9e43-4b60-b6a9-88297afbbdd8)
