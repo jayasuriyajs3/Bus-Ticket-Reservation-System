@@ -33,12 +33,12 @@ UML Diagram:
 
 OOPS concepts used:
 
-Encapsulation → Passenger details and seat counts are private with controlled access.
+Encapsulation - Passenger details and seat counts are private with controlled access.
 
-Inheritance → SleeperBus and SeaterBus inherit common properties from Bus.
+Inheritance - SleeperBus and SeaterBus inherit common properties from Bus.
 
-Polymorphism → calcFare() is overridden to compute fares differently for each bus type.
+Polymorphism - calcFare() is overridden to compute fares differently for each bus type.
 
-Abstraction → Bus is defined as an abstract class with abstract methods like calcFare().
+Abstraction - Bus is defined as an abstract class with abstract methods like calcFare().
 
-Composition → Ticket depends on Bus; waitlist is integrated with Ticket system.
+Composition - Ticket depends on Bus; waitlist is integrated with Ticket system.
