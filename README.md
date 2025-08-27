@@ -2,23 +2,30 @@
 
 Problem Statement:
 
-Many bus operators still rely on manual booking methods, which lead to issues like double booking, fare miscalculations, and poor seat management. A digital system is required to automate ticket booking, handle cancellations, and track seat availability efficiently.
+Most bus operators still rely on manual booking, leading to double bookings, wrong fare calculations, and poor seat tracking.
+Even existing digital bus systems lack a proper waitlist mechanism. This means if all seats are full, passengers miss out even if cancellations happen later.
+A system is needed that not only automates booking and cancellation but also introduces an efficient waitlist feature to improve passenger experience.
 
 Description:
 
-The Bus Ticket Reservation System is a Java-based application that simplifies the process of managing bus bookings. It enables travelers to book, cancel, and view tickets while automatically updating seat availability. The system supports different types of buses — Sleeper and Seater — with separate fare calculation logic. By applying core OOP principles such as inheritance, polymorphism, and abstraction, the project ensures a modular and scalable design.
+The Bus Ticket Reservation System with Waitlist Feature is a Java-based application that simplifies managing bus bookings.
+It allows passengers to book, cancel, and view tickets while keeping seat availability updated in real time.
+A unique waitlist system ensures that if all seats are full, passengers are placed in a queue. If a cancellation occurs, the system automatically confirms the first person in the waitlist.
+It also supports Sleeper and Seater buses, each with different fare calculation logic, designed using core OOP principles.
 
 Features:
 
 Book and cancel tickets.
 
-Track available seats in real-time.
+Real-time seat availability tracking.
 
-Different bus types (Sleeper & Seater) with unique fare calculation.
+Sleeper & Seater buses with unique fare calculations.
 
-Ticket details including passenger name, seat number, and fare.
+Ticket details include passenger name, seat number, and fare.
 
-Console-based user interaction for demonstration.
+Waitlist system (unique) → auto-confirmation when a seat becomes available.
+
+Console-based for demo (extendable with DBMS & GUI).
 
 UML Diagram:
 
@@ -26,12 +33,12 @@ UML Diagram:
 
 OOPS concepts used:
 
-Encapsulation → Passenger and seat data kept private, accessed via methods.
+Encapsulation → Passenger details and seat counts are private with controlled access.
 
-Inheritance → SleeperBus and SeaterBus extend the Bus class.
+Inheritance → SleeperBus and SeaterBus inherit common properties from Bus.
 
-Polymorphism → calcFare() overridden in subclasses to compute different fares.
+Polymorphism → calcFare() is overridden to compute fares differently for each bus type.
 
-Abstraction → Bus is abstract with calcFare() as an abstract method.
+Abstraction → Bus is defined as an abstract class with abstract methods like calcFare().
 
-Composition → Ticket class uses a Bus object for booking.
+Composition → Ticket depends on Bus; waitlist is integrated with Ticket system.
