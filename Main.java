@@ -42,3 +42,32 @@ class SeaterBus extends Bus {
         return 500.0; // flat fare for seater
     }
 }
+
+class Ticket {
+    private static int idCounter = 1;
+    private int ticketId;
+    private String passengerName;
+    private int seatNo;
+    private double fare;
+    private Bus bus;
+
+    public Ticket(String passengerName, Bus bus, int seatNo) {
+        this.ticketId = idCounter++;
+        this.passengerName = passengerName;
+        this.bus = bus;
+        this.seatNo = seatNo;
+        this.fare = bus.calcFare();
+    }
+
+    public int getTicketId() { return ticketId; }
+    public int getSeatNo() { return seatNo; }
+
+    public void displayTicket() {
+        System.out.println("Ticket ID: " + ticketId +
+                " | Passenger: " + passengerName +
+                " | Seat No: " + seatNo +
+                " | Fare: " + fare +
+                " | Bus: " + bus.busName);
+    }
+}
+
