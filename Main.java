@@ -31,3 +31,14 @@ class SleeperBus extends Bus {
         return 800.0; // flat fare for sleeper
     }
 }
+
+class SeaterBus extends Bus {
+    public SeaterBus(int busId, String busName, int totalSeats) {
+        super(busId, busName, totalSeats);
+    }
+
+    @Override
+    public double calcFare() {
+        return 500.0; // flat fare for seater
+    }
+}
