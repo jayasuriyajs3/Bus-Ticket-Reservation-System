@@ -20,3 +20,14 @@ abstract class Bus {
 
     public abstract double calcFare();
 }
+
+class SleeperBus extends Bus {
+    public SleeperBus(int busId, String busName, int totalSeats) {
+        super(busId, busName, totalSeats);
+    }
+
+    @Override
+    public double calcFare() {
+        return 800.0; // flat fare for sleeper
+    }
+}
