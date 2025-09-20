@@ -71,3 +71,19 @@ class Ticket {
     }
 }
 
+class Waitlist {
+    private Queue<String> queue = new LinkedList<>();
+
+    public void addPassenger(String name) {
+        queue.add(name);
+        System.out.println(name + " added to waitlist.");
+    }
+
+    public String getNextPassenger() {
+        return queue.poll(); // returns and removes first person
+    }
+
+    public void showWaitlist() {
+        System.out.println("Current Waitlist: " + queue);
+    }
+}
